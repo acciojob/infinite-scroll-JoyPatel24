@@ -23,7 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Initially add 10 list items
-    addMoreItems();
+    // Initially add about 10 list items
+    for (let i = 0; i < 10; i++) {
+        const li = document.createElement('li');
+        li.textContent = `Item ${i + 1}`;
+        list.appendChild(li);
+    }
+
 });
 
